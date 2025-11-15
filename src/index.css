@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #f5f7f9;
+    --color-menu: #0d204b;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-btn: #141414;
+    --color-base: #222121;
+
+    --font-ibm-plex-sans: IBM Plex Sans, sans-serif;
+    --font-michroma: Michroma, sans-serif;
+
+}
+
+@layer base {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        @apply bg-primary font-ibm-plex-sans text-base;
+    }
+
+    header {
+        @apply bg-menu;
+    }
+
+    header nav a{
+        @apply text-white text-lg px-4 font-bold hover:text-[#cde9f5];
+
+    }
+
+    footer {
+        @apply bg-menu text-sm text-white gap-4 flex flex-col justify-center items-center p-4;
+    }
+
+    footer a {
+        @apply hover:text-[#cde9f5];
+    }
+
+    footer ul li{
+        @apply text-white text-xl mt-4;
+    }
+
+    img {
+        @apply rounded-2xl w-full
+    }
+
+    iframe {
+        @apply rounded-2xl aspect-video
+    }
+
+
+
+
+}
+
+@layer components {
+
+    .baixar {
+        @apply bg-[#027dc3] rounded-xl p-2 mx-2
+    }
+
+    .mobile {
+        @apply bg-gray-200 sm:hidden space-y-2 py-3;
+    }
+
+    .mobile a{
+        @apply block text-black transition-all  active:text-menu;
+
+    }
+
+    .logo {
+        @apply text-4xl font-michroma font-bold text-gradient px-4;
+    }
+
+    .redes {
+        @apply text-white bg-gray-900  flex text-xl gap-2 items-center justify-end pr-4 py-2;
+
+        a {
+            @apply hover:text-[#cde9f5];
+        }
+
+    }
+
+    .artigo {
+        @apply text-justify
+    }
+
+    .artigo b{
+        @apply text-black;
+    }
+
+    .artigo u{
+        @apply text-[#027dc3] font-bold;
+    }
+
+    .artigo h1, h2, h3{
+        @apply text-[#027dc3] font-semibold;
+    }
+
+    .artigo h1 {
+        @apply text-4xl/12 mb-10;
+    }
+
+    .artigo h2{
+        @apply text-3xl/12 my-7;
+    }
+
+    .artigo h3{
+        @apply text-2xl/12 mb-5;
+    }
+
+    .artigo img, iframe{
+        @apply mb-10 mt-7;
+    }
+
+    .artigo p, li {
+        @apply mb-3 text-lg/7;
+    }
+
+    .artigo li {
+        @apply list-disc list-inside pl-5;
+    }
+
+    .pesquisa {
+        @apply bg-gray-200 p-3 mb-5 rounded-2xl w-60 text-menu;
+    }
+
+}
+
+@utility text-gradient {
+    @apply bg-gradient-to-r from-[#cde9f5] via-[#65b6e4] to-[#027dc3] text-transparent bg-clip-text;
+}

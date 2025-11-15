@@ -42,7 +42,7 @@ const App = () => {
                     <h3> Proteção de dados e privacidade </h3>
 
                     <p>
-                        Sistemas de IA dependem de grandes volumes de dados — muitos deles <b>pessoais, sensíveis ou
+                        Sistemas de IA dependem de grandes volumes de dados, muitos deles <b>pessoais, sensíveis ou
                         comunitários</b>. Sem proteção adequada, esses dados ficam vulneráveis a <b>vazamentos, usos
                         indevidos
                         ou manipulação</b>. A criptografia ajuda a garantir:

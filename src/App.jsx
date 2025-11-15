@@ -37,7 +37,7 @@ const App = () => {
 
 
 
-                    <img src={"./imagem1.jpg"}/>
+                    <img src={`${import.meta.env.BASE_URL}imagem1.jpg`}/>
 
                     <h2>Por que a criptografia importa na IA</h2>
                     <h3> Proteção de dados e privacidade </h3>
@@ -191,7 +191,7 @@ const App = () => {
 
                     <h2>Rumo à uma Inteligência Artificial confiável</h2>
 
-                    <img src={"./imagem2.jpg"}/>
+                    <img src={`${import.meta.env.BASE_URL}imagem2.jpg`}/>
 
                     <p>
                         A <b>criptografia aplicada à Inteligência Artificial</b> vai além da técnica — é uma estratégia de
@@ -206,7 +206,7 @@ const App = () => {
 
                     <input type={"text"} className={"pesquisa"} placeholder={"Pesquisar..."}></input>
 
-                    <img src={"./anuncio2.gif"}/>
+                    <img src={`${import.meta.env.BASE_URL}/anuncio2.gif`}/>
 
                 </div>
             </main>

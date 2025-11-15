@@ -17,8 +17,7 @@ const App = () => {
 
                     <p>
                         Vivemos uma era em que a <b>Inteligência Artificial (IA)</b> avança rapidamente em diferentes
-                        setores —
-                        da
+                        setores da
                         saúde à educação, da assistência social à administração pública. Com esse avanço, cresce
                         igualmente
                         o volume e a importância dos dados trafegados e processados por esses sistemas. Nesse cenário,
@@ -29,7 +28,7 @@ const App = () => {
                     </p>
 
                     <p>
-                        Visamos explorar <b>como a criptografia pode — e deve — ser aplicada em sistemas de IA</b>,
+                        Visamos explorar <b>como a criptografia pode, e deve, ser aplicada em sistemas de IA</b>,
                         quais os desafios concretos no Brasil e de que modo isso pode gerar efeitos reais na comunidade,
                         garantindo inclusão, ética e proteção.
                     </p>
